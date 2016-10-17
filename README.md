@@ -4,7 +4,7 @@ Recommender Systems with Spark MLlib @ BEEVA
 ## Option 1: Spark console
 * [Download Spark binary](http://spark.apache.org/downloads.html)
 * Launch `spark-shell`
-* Copy & paste spark-shell scripts
+* Copy & paste [spark-shell scripts](./spark-shell)
 
 ## Option 2: Zeppelin notebooks
 
