@@ -9,8 +9,7 @@ import org.apache.spark.mllib.linalg.distributed.RowMatrix
 import org.apache.spark.mllib.linalg.distributed.MatrixEntry
 
 
-val PATH = "https://raw.githubusercontent.com/beeva-enriqueotero/beeva-recsys-spark-training/master/data/u1.base"
-//val PATH = "/home/enrique/proyectos/movielens/ml-100k/"
+val PATH = "/home/enriqueotero/datasets/movielens/ml-100k/"
 //val PATH = "s3://beeva-research-lab/movielens/ml10M/"
 val TRAINFILE = "u1.base"
 val TESTFILE = "u1.test"
