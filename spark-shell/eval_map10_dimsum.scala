@@ -178,7 +178,8 @@ userRecommended.flatMapValues(x=>x).count()
 val movies = sc.textFile(PATH + "u.item")
 val titles = movies.map(line => line.split("\\|").take(2)).map(array => (array(0).toInt,  array(1))).collectAsMap()
 titles(123)
-users.lookup(310).map(titles)
+val users_likes = ratings.filter(_.rating>0).map(r => (r.product,r.user)).map{case (item,user) => (user,item)}
+users_likes.lookup(310).map(titles)
 userRecommended.lookup(310).flatMap(r=>r).map(r=>(titles(r.product), r.rating))
 
 
