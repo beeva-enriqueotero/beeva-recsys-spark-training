@@ -9,13 +9,11 @@ import org.apache.spark.mllib.linalg.distributed.RowMatrix
 import org.apache.spark.mllib.linalg.distributed.MatrixEntry
 
 
-val PATH = "/home/enrique/proyectos/movielens/ml-100k/"
-//val PATH = "s3://beeva-research-lab/movielens/ml100k/"
+val PATH = "https://raw.githubusercontent.com/beeva-enriqueotero/beeva-recsys-spark-training/master/data/u1.base"
+//val PATH = "/home/enrique/proyectos/movielens/ml-100k/"
 //val PATH = "s3://beeva-research-lab/movielens/ml10M/"
 val TRAINFILE = "u1.base"
-//val TRAINFILE = "u5.train"
 val TESTFILE = "u1.test"
-//val TESTFILE = "u5.test"
 
   // Read in the ratings data
   val ratings = sc.textFile(PATH + TRAINFILE).map { line =>
